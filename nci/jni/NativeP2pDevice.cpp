@@ -58,7 +58,7 @@ static jboolean nativeP2pDeviceDoSend(JNIEnv*, jobject, jbyteArray) {
 ** Description:     JNI functions
 **
 *****************************************************************************/
-static const JNINativeMethod gMethods[] = {
+static JNINativeMethod gMethods[] = {
     {"doConnect", "()Z", (void*)nativeP2pDeviceDoConnect},
     {"doDisconnect", "()Z", (void*)nativeP2pDeviceDoDisconnect},
     {"doTransceive", "([B)[B", (void*)nativeP2pDeviceDoTransceive},

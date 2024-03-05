@@ -214,7 +214,7 @@ static jint nativeLlcpSocket_doGetRemoteSocketRW(JNIEnv* e, jobject o) {
 ** Description:     JNI functions
 **
 *****************************************************************************/
-static const JNINativeMethod gMethods[] = {
+static JNINativeMethod gMethods[] = {
     {"doConnect", "(I)Z", (void*)nativeLlcpSocket_doConnect},
     {"doConnectBy", "(Ljava/lang/String;)Z",
      (void*)nativeLlcpSocket_doConnectBy},
